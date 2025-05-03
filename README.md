@@ -1,4 +1,4 @@
-# Todo-nvim
+# nvim-todo
 
 A simple Neovim plugin for managing your todo list in a floating window.
 
@@ -17,7 +17,7 @@ A simple Neovim plugin for managing your todo list in a floating window.
 use {
   'XisEnine/test-todo',
   config = function()
-    require('todo-nvim').setup()
+    require('nvim-todo').setup()
   end
 }
 ```
@@ -28,7 +28,7 @@ use {
 {
   'XisEnine/test-todo',
   config = function()
-    require('todo-nvim').setup()
+    require('nvim-todo').setup()
   end
 }
 ```
@@ -41,7 +41,7 @@ Plug 'XisEnine/test-todo'
 
 Then in your init.lua:
 ```lua
-require('todo-nvim').setup()
+require('nvim-todo').setup()
 ```
 
 ## Configuration
@@ -49,7 +49,7 @@ require('todo-nvim').setup()
 You can configure the plugin with the setup function:
 
 ```lua
-require('todo-nvim').setup({
+require('nvim-todo').setup({
   -- Set a keymap to open the todo window (optional)
   keymap = '<leader>td',
 })
